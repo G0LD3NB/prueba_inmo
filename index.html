@@ -39,6 +39,389 @@
         .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0c4a6e 100%); }
         .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        /* ==============================
+   ESTILOS GENERALES
+================================ */
+
+.aura-section {
+    padding: 100px 20px;
+}
+
+.aura-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aura-eyebrow {
+    display: inline-block;
+    color: #b18a56;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.aura-section h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    margin: 0 0 25px;
+    color: #172a3a;
+}
+
+
+/* ==============================
+   SOBRE NOSOTROS
+================================ */
+
+.aura-about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.aura-about-content h3 {
+    font-size: 23px;
+    line-height: 1.5;
+    color: #b18a56;
+    margin-bottom: 20px;
+}
+
+.aura-about-content p {
+    color: #687583;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.aura-btn {
+    display: inline-block;
+    background: #172a3a;
+    color: white;
+    border: none;
+    padding: 15px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.aura-btn:hover {
+    background: #b18a56;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.aura-about-values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.aura-value-card {
+    background: #f7f8fa;
+    padding: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.aura-value-card:hover {
+    transform: translateY(-5px);
+}
+
+.aura-value-card span {
+    color: #b18a56;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.aura-value-card h4 {
+    color: #172a3a;
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+.aura-value-card p {
+    color: #687583;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ==============================
+   CONTACTO
+================================ */
+
+.aura-contact-section {
+    background: #f7f8fa;
+}
+
+.aura-section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 55px;
+}
+
+.aura-section-heading p {
+    color: #687583;
+    line-height: 1.8;
+}
+
+.aura-contact-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 60px;
+}
+
+.aura-contact-form,
+.aura-contact-info {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.04);
+}
+
+.aura-contact-form h3,
+.aura-contact-info h3 {
+    color: #172a3a;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 21px;
+}
+
+.aura-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.aura-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.aura-form-group label {
+    color: #172a3a;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.aura-form-group input,
+.aura-form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    border: 1px solid #e1e5e9;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.aura-form-group input:focus,
+.aura-form-group textarea:focus {
+    border-color: #b18a56;
+}
+
+.aura-form-group textarea {
+    resize: vertical;
+}
+
+.aura-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.aura-contact-icon {
+    min-width: 45px;
+    height: 45px;
+    background: #f7f2ea;
+    color: #b18a56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.aura-contact-item h4 {
+    color: #172a3a;
+    margin: 0 0 8px;
+}
+
+.aura-contact-item p {
+    color: #687583;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.aura-contact-item a {
+    color: #687583;
+    text-decoration: none;
+}
+
+.aura-contact-item a:hover {
+    color: #b18a56;
+}
+
+
+/* ==============================
+   FOOTER
+================================ */
+
+.aura-footer {
+    background: #142637;
+    color: white;
+    padding: 75px 20px 25px;
+}
+
+.aura-footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 55px;
+}
+
+.aura-footer-logo {
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.aura-footer-logo span {
+    color: #b18a56;
+}
+
+.aura-footer-brand p {
+    color: #aab5bf;
+    line-height: 1.8;
+    font-size: 14px;
+    max-width: 280px;
+    margin-top: 20px;
+}
+
+.aura-footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aura-footer-column h4 {
+    font-size: 16px;
+    margin: 5px 0 10px;
+    color: white;
+}
+
+.aura-footer-column a {
+    color: #aab5bf;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.aura-footer-column a:hover {
+    color: #b18a56;
+}
+
+.aura-footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.aura-footer-bottom p {
+    color: #aab5bf;
+    font-size: 13px;
+    margin: 0;
+}
+
+.aura-footer-bottom div {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.aura-footer-bottom a {
+    color: #aab5bf;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.aura-footer-bottom a:hover {
+    color: #b18a56;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .aura-about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .aura-contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .aura-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .aura-section {
+        padding: 65px 20px;
+    }
+
+    .aura-about-values {
+        grid-template-columns: 1fr;
+    }
+
+    .aura-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .aura-contact-form,
+    .aura-contact-info {
+        padding: 25px 20px;
+    }
+
+    .aura-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .aura-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .aura-footer-bottom div {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
     </style>
 </head>
 <body class="font-sans text-slate-800 bg-slate-50 antialiased overflow-x-hidden min-h-screen flex flex-col justify-between">
@@ -325,6 +708,83 @@
             </div>
         </section>
 
+        <!-- VISTA 7: POLITICA DE SEGURIDAD -->
+        <section id="view-politica-privacidad" class="view-section hidden py-12 bg-slate-900 text-white">
+            <h2>¿Qué es una cookie?</h2>
+<p>Una <em>cookie</em> es un fichero de texto <b>inofensivo</b> que se almacena en su navegador cuando visita casi cualquier página web. La utilidad de la <em>cookie</em> es que la web sea capaz de recordar su visita cuando vuelva a navegar por esa página. Aunque mucha gente no lo sabe las <em>cookies</em> se llevan utilizando desde hace 20 años, cuando aparecieron los primeros navegadores para la World Wide Web.</p>
+<h2>¿Qué NO ES una cookie?</h2>
+<p>No es un virus, ni un troyano, ni un gusano, ni spam, ni spyware, ni abre ventanas pop-up.</p>
+<h2>¿Qué información almacena una <em>cookie</em>?</h2>
+<p>Las <em>cookies</em> no suelen almacenar información sensible sobre usted, como tarjetas de crédito o datos bancarios, fotografías, su DNI o información personal, etc. Los datos que guardan son de carácter técnico, preferencias personales, personalización de contenidos, etc.</p>
+<p>El servidor web no le asocia a usted como persona si no a su navegador web. De hecho, si usted navega habitualmente con Internet Explorer y prueba a navegar por la misma web con Firefox o Chrome verá que la web no se da cuenta que es usted la misma persona porque en realidad está asociando al navegador, no a la persona.</p>
+<h2>¿Qué tipo de <em>cookies</em> existen?</h2>
+<ul>
+<li><em>Cookies</em> técnicas: Son las más elementales y permiten, entre otras cosas, saber cuándo está navegando un humano o una aplicación automatizada, cuándo navega un usuario anónimo y uno registrado, tareas básicas para el funcionamiento de cualquier web dinámica.</li>
+<li><em>Cookies</em> de análisis: Recogen información sobre el tipo de navegación que está realizando, las secciones que más utiliza, productos consultados, franja horaria de uso, idioma, etc.</li>
+<li><em>Cookies</em> publicitarias: Muestran publicidad en función de su navegación, su país de procedencia, idioma, etc.</li>
+</ul>
+<h2>¿Qué son las <em>cookies</em> propias y las de terceros?</h2>
+<p>Las <em>cookies propias</em> son las generadas por la página que está visitando y las <em>de terceros</em> son las generadas por servicios o proveedores externos como Facebook, Twitter, Google, etc.</p>
+<h2>¿Qué ocurre si desactivo las <em>cookies</em>?</h2>
+<p>Para que entienda el alcance que puede tener desactivar las <em>cookies</em> le mostramos unos ejemplos:</p>
+<ul>
+<li>No podrá compartir contenidos de esa web en Facebook, Twitter o cualquier otra red social.</li>
+<li>El sitio web no podrá adaptar los contenidos a sus preferencias personales, como suele ocurrir en las tiendas online.</li>
+<li>No podrá acceder al área personal de esa web, como por ejemplo <em>Mi cuenta</em>, o <em>Mi perfil</em> o <em>Mis pedidos</em>.</li>
+<li>Tiendas online: Le será imposible realizar compras online, tendrán que ser telefónicas o visitando la tienda física si es que dispone de ella.</li>
+<li>No será posible personalizar sus preferencias geográficas como franja horaria, divisa o idioma.</li>
+<li>El sitio web no podrá realizar analíticas web sobre visitantes y tráfico en la web, lo que dificultará que la web sea competitiva.</li>
+<li>No podrá escribir en el blog, no podrá subir fotos, publicar comentarios, valorar o puntuar contenidos. La web tampoco podrá saber si usted es un humano o una aplicación automatizada que publica <em>spam</em>.</li>
+<li>No se podrá mostrar publicidad sectorizada, lo que reducirá los ingresos publicitarios de la web.</li>
+<li>Todas las redes sociales usan <em>cookies</em>, si las desactiva no podrá utilizar ninguna red social.</li>
+</ul>
+<h2>¿Se pueden eliminar las <em>cookies</em>?</h2>
+<p>Sí. No sólo eliminar, también bloquear, de forma general o particular para un dominio específico.</p>
+<p>Para eliminar las <em>cookies</em> de un sitio web debe ir a la configuración de su navegador y allí podrá buscar las asociadas al dominio en cuestión y proceder a su eliminación.</p>
+<h2 id="navegadores">Configuración de <em>cookies</em> para los navegadores más polulares</h2>
+<p>A continuación le indicamos cómo acceder a una <em>cookie</em> determinada del navegador <b>Chrome</b>. Nota: estos pasos pueden variar en función de la versión del navegador:</p>
+<ol>
+<li>Vaya a Configuración o Preferencias mediante el menú Archivo o bien pinchando el icono de personalización que aparece arriba a la derecha.</li>
+<li>Verá diferentes secciones, pinche la opción <em>Mostrar opciones avanzadas</em>.</li>
+<li>Vaya a <em>Privacidad</em>, <em>Configuración de contenido</em>.</li>
+<li>Seleccione <em>Todas las cookies y los datos de sitios</em>.</li>
+<li>Aparecerá un listado con todas las <em>cookies</em> ordenadas por dominio. Para que le sea más fácil encontrar las <em>cookies</em> de un determinado dominio introduzca parcial o totalmente la dirección en el campo <em>Buscar cookies</em>.</li>
+<li>Tras realizar este filtro aparecerán en pantalla una o varias líneas con las <em>cookies</em> de la web solicitada. Ahora sólo tiene que seleccionarla y pulsar la <em>X</em> para proceder a su eliminación.</li>
+</ol>
+<p>Para acceder a la configuración de <em>cookies</em> del navegador <b>Internet Explorer</b> siga estos pasos (pueden variar en función de la versión del navegador):</p>
+<ol>
+<li>Vaya a <em>Herramientas</em>, <em>Opciones de Internet</em></li>
+<li>Haga click en <em>Privacidad</em>.</li>
+<li>Mueva el deslizador hasta ajustar el nivel de privacidad que desee.</li>
+</ol>
+<p>Para acceder a la configuración de <em>cookies</em> del navegador <b>Firefox</b> siga estos pasos (pueden variar en función de la versión del navegador):</p>
+<ol>
+<li>Vaya a <em>Opciones</em> o <em>Preferencias</em> según su sistema operativo.</li>
+<li>Haga click en <em>Privacidad</em>.</li>
+<li>En <em>Historial</em> elija <em>Usar una configuración personalizada para el historial</em>.</li>
+<li>Ahora verá la opción <em>Aceptar cookies</em>, puede activarla o desactivarla según sus preferencias.</li>
+</ol>
+<p>Para acceder a la configuración de <em>cookies</em> del navegador <b>Safari para OSX</b> siga estos pasos (pueden variar en función de la versión del navegador):</p>
+<ol>
+<li>Vaya a <em>Preferencias</em>, luego <em>Privacidad</em>.</li>
+<li>En este lugar verá la opción <em>Bloquear cookies</em> para que ajuste el tipo de bloqueo que desea realizar.</li>
+</ol>
+<p>Para acceder a la configuración de <em>cookies</em> del navegador <b>Safari para iOS</b> siga estos pasos (pueden variar en función de la versión del navegador):</p>
+<ol>
+<li>Vaya a <em>Ajustes</em>, luego <em>Safari</em>.</li>
+<li>Vaya a <em>Privacidad y Seguridad</em>, verá la opción <em>Bloquear cookies</em> para que ajuste el tipo de bloqueo que desea realizar.</li>
+</ol>
+<p>Para acceder a la configuración de <em>cookies</em> del navegador para dispositivos <b>Windows Phone</b> siga estos pasos (pueden variar en función de la versión del navegador):</p>
+<ol>
+<li>Abra <em>Internet Explorer</em>, luego <em>Más</em>, luego <em>Configuración</em></li>
+<li>Ahora puede activar o desactivar la casilla <em>Permitir cookies</em>.</li>
+</ol>								</div>
+				</div>
+					</div>
+				</div>
+				</div>
+        </section>
+
     </main>
 
     <!-- MODAL DETALLE DE VIVIENDA CON CARRUSLE -->
@@ -380,10 +840,70 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
+    <!-- FOOTER 
     <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800 text-center text-xs">
         <p>&copy; 2026 Aura Inmobiliaria. Conectado a Supabase PostgreSQL.</p>
     </footer>
+    -->
+
+    <!-- FOOTER -->
+<footer class="aura-footer">
+
+    <div class="aura-container">
+
+        <div class="aura-footer-grid">
+
+            <!-- MARCA -->
+            <div class="aura-footer-brand">
+                <a href="#" class="aura-footer-logo">AURA<span> INMO</span></a>
+
+                <p>
+                    Encontramos mucho más que propiedades.
+                    Te ayudamos a encontrar tu próximo hogar.
+                </p>
+            </div>
+
+            <!-- NAVEGACIÓN -->
+            <div class="aura-footer-column">
+                <h4>Navegación</h4>
+                <a href="#">Inicio</a>
+                <a href="#view-politica-privacidad">Política de seguridad</a>
+                <a href="#" onclick="showSection('politica-privacidad'); return false;">Política de privacidad</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <!-- SERVICIOS -->
+            <div class="aura-footer-column">
+                <h4>Nuestros servicios</h4>
+                <a href="#servicios">Compra de viviendas</a>
+                <a href="#servicios">Venta de propiedades</a>
+                <a href="#servicios">Asesoramiento inmobiliario</a>
+            </div>
+
+            <!-- CONTACTO -->
+            <div class="aura-footer-column">
+                <h4><a href="#contacto">Contacto</a></h4>
+                <a href="mailto:TU_CORREO@DOMINIO.COM">E-mail: abogados@sanabriaygoyanes.com</a>
+                <a href="tel:+34000000000">Teléfonp: (+34) 922 971 973</a>
+                <a href="tel:+34000000000">Teléfono móvil: (+34) 608 434 414</a>
+                <a href="tel:+34000000000">Fax: (+34) 922 979 253</a>
+            </div>
+
+        </div>
+
+        <div class="aura-footer-bottom">
+            <p>© 2026 Aura Inmobiliaria. Todos los derechos reservados.</p>
+
+            <div>
+                <a href="#">Aviso legal</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Política de cookies</a>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
 
     <!-- LÓGICA JAVASCRIPT -->
     <script>
